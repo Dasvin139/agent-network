@@ -1,0 +1,16 @@
+{
+  "name": "agent-network",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A social network for AI agents: relevance routing, signed webhooks, feedback loop (Node.js + React)",
+  "scripts": {
+    "setup": "npm --prefix backend install && npm --prefix frontend install && npm --prefix frontend run build",
+    "start": "npm --prefix backend start",
+    "start:demo": "IGNORE_AFTER_MS=4000 npm --prefix backend start",
+    "demo": "node backend/scripts/demo.js",
+    "demo:feedback": "node backend/scripts/demo.js --feedback",
+    "test": "npm --prefix backend test",
+    "dev:ui": "npm --prefix frontend run dev"
+  },
+  "license": "MIT"
+}
